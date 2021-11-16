@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const productList = [
+            { name: "iphone 7", quantity: 30 },
+            { name: "Samsung S10",  quantity: 10 },
+            { name: "Iphone X", quantity: 5 },
+            { name: "Xiaomi Redmi", quantity: 1 },
+        ];
+// Sản phẩm có quantity < 10 được coi là sản phẩm sắp hết hàng
+// 1. Đưa ra danh sách sản phẩm sắp hết hàng (quantity < 10)
+// 2. Đếm xem có bao nhiêu sản phẩm sắp hết hàng
+        
+            let ds =[];
+            for (let sp of productList){
+                if (sp.quantity < 10){
+                    ds = sp.quantity;
+                }
+                console.log(ds, ds.length);
+            };
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
