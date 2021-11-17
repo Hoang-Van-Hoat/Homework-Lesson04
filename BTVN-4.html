@@ -19,11 +19,10 @@
             let ds =[];
             for (let sp of productList){
                 if (sp.quantity < 10){
-                    ds = sp.quantity;
+                    ds.push(sp.name);
                 }
-                console.log(ds, ds.length);
-            };
-    
+            }
+            console.log(ds, ds.length);
     </script>
 </head>
 <body>
